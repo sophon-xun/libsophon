@@ -31,11 +31,6 @@ libsophon目前包含如下组件：
             g++-aarch64-linux-gnu \
             git
 
-**获取git submodules：**
-
-::
-
-    git submodule update --init
 
 **编译：**
 
@@ -299,10 +294,7 @@ libsophon目前包含如下组件：
 
 ::
 
-    cd /
-    git clone ssh://${your_name}@gerrit-ai.sophgo.vip:29418/libsophon
     cd libsophon
-    git submodule update --init
     mkdir build && cd build
     cmake -DPLATFORM=soc -DSOC_LINUX_DIR=/usr/src/${header}/  -DCMAKE_INSTALL_PREFIX=$PWD/../install ..
     make
